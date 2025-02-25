@@ -12,28 +12,46 @@ Kelas   : 4B - Rekayasa Perangkat Lunak
     <title>Login</title>
   </head>
   <body>
-    <div>
-      <h2>Login</h2>
-      <form action="" method="post">
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="email..."
-          required
-        />
-        <label for="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Password..."
-          required
-        />
-        <input type="submit" value="Login" />
+    <fieldset>
+      <legend><h2>Login</h2></legend>
+      <form action="" method="POST">
+        <table>
+          <tr>
+            <td>
+              <label for="email">Email</label>
+            </td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email..."
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Password</label>
+            </td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password..."
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Login" />
+            </td>
+          </tr>
+        </table>
       </form>
-      <p>Don't have an account? <a href="register.html">Register here</a></p>
-    </div>
+    </fieldset>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
   </body>
 </html>
