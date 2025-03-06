@@ -1,0 +1,174 @@
+<!-- 
+Nama    : Ryan Gabriel Siringoringo
+NIM     : 2304928
+Kelas   : 4B - Rekayasa Perangkat Lunak
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="register.css" />
+    <title>Register</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register</h1>
+      <form action="" method="POST">
+        <div>
+          <label for="email">Email</label>
+          <input
+            required
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Masukkan Email..."
+          />
+        </div>
+        <div>
+          <label for="username">Username</label>
+          <input
+            required
+            id="username"
+            name="username"
+            type="text"
+            placeholder="Masukkan Username..."
+          />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input
+            required
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Masukkan Password..."
+          />
+        </div>
+        <div>
+          <label for="telepon">No telepon</label>
+          <input
+            required
+            id="telepon"
+            name="telepon"
+            type="tel"
+            placeholder="Masukkan No Telepon..."
+          />
+        </div>
+        <div class="radio">
+          <label class="sex_title">Jenis Kelamin</label>
+          <div>
+            <div>
+              <input
+              required
+              id="jenis_kelamin_laki"
+              type="radio"
+              name="jenis_kelamin"
+              value="Laki-laki"
+              />
+              <label for="jenis_kelamin_laki">Laki-laki</label>
+            </div>
+            <div>
+              <input
+              required
+              id="jenis_kelamin_perempuan"
+              type="radio"
+              name="jenis_kelamin"
+              value="Perempuan"
+              />
+              <label for="jenis_kelamin_perempuan">Perempuan</label>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox">
+          <label class="hobbies_title">Hobi</label>
+          <div>
+            <div>
+              <input
+                id="sepak_bola"
+                name="hobi"
+                type="checkbox"
+                value="sepak_bola"
+              />
+              <label for="sepak_bola">Sepak Bola</label>
+            </div>
+            <div>
+              <input
+              id="bola_basket"
+              name="hobi"
+              type="checkbox"
+              value="bola_basket"
+              />
+              <label for="bola_basket">Bola Basket</label>
+            </div>
+            <div>
+              <input
+              id="berenang"
+              name="hobi"
+              type="checkbox"
+              value="berenang"
+              />
+              <label for="berenang">Berenang</label>
+            </div>
+            <div>
+              <input id="membaca" name="hobi" type="checkbox" value="membaca" />
+              <label for="membaca">Membaca</label>
+            </div>
+            <div>
+              <input id="menulis" name="hobi" type="checkbox" value="menulis" />
+              <label for="menulis">Menulis</label>
+            </div>
+            <div>
+              <input
+              id="bersepeda"
+              name="hobi"
+              type="checkbox"
+              value="bersepeda"
+              />
+              <label for="bersepeda">Bersepeda</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label for="alamat">Alamat</label>
+          <textarea
+            id="alamat"
+            name="alamat"
+            rows="4"
+            placeholder="Masukkan alamat Anda..."
+          ></textarea>
+        </div>
+        <div>
+          <label for="jurusan">Jurusan</label>
+          <select id="jurusan" name="jurusan">
+            <option>RPL</option>
+            <option>PGPAUD</option>
+            <option>PGSD</option>
+            <option>Tekkom</option>
+            <option>Multimedia</option>
+          </select>
+        </div>
+        <div>
+          <label for="tanggal_lahir">Tanggal lahir</label>
+          <input
+            required
+            id="tanggal_lahir"
+            name="tanggal_lahir"
+            type="date"
+          />
+        </div>
+        <div class="foto-diri">
+          <label class="foto-diri-label" for="foto_diri">Foto Diri</label>
+          <input class="foto-diri-file" id="foto_diri" name="foto_diri" type="file" />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+        <p>Already Have an Account? <a href="../login/">Login</a></p>
+      </form>
+    </div>
+  </body>
+</html>
